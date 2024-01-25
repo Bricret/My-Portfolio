@@ -1,0 +1,41 @@
+---
+import GitHub from "./icons/GitHub.astro"
+
+
+const PROJECTS = [
+    {
+        title: 'Project 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.',
+        image: 'https://via.placeholder.com/300x200',
+        link: 'https://www.google.com',
+        github: 'https://www.github.com',
+        tags: ['HTML', 'CSS', 'JavaScript']
+    },
+    // {
+    //     title: 'Project 2',
+    //     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.',
+    //     image: 'https://via.placeholder.com/300x200',
+    //     link: 'https://www.google.com',
+    //     github: 'https://www.github.com',
+    //     tags: ['HTML', 'CSS', 'JavaScript']
+    // },
+]
+---
+
+{
+    PROJECTS.map(({ title, description, image, link, github, tags }) => (
+            <section class="w-full flex items-center justify-between mb-10 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6">
+                <a href={link} target="_blank" class="w-1/2 cursor-pointer overflow-hidden rounded-lg">
+                    <img src={image} alt={title} class="w-full h-auto" />
+                </a>
+                <div class="w-1/2 flex flex-col items-start justify-between pl-6 text-black">
+                    <span class="my-2 w-full text-left text-2xl font-bold">{title}</span>
+                    <p class="my-2 font-medium text-black/50 text-pretty">{description}</p>
+                    <div>
+                        <a href={github} target="_blank"> <GitHub class="size-6"/> </a>
+                        <a href={link} target="_blank" class="">Visita el Proyecto!</a>
+                    </div>
+                </div>
+            </section>
+        ))
+    }    
