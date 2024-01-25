@@ -10,18 +10,20 @@ const { title, description, date, latest } = Astro.props
 ---
 
 
-<li class="mb-10 ms-6">            
-    <span class="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-zinc-200">
-        <svg class="size-4 text-zinc-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+<li class="mb-10 ms-6 ">            
+    <span class="absolute flex items-center justify-center size-6 bg-white rounded-full -start-3 ring-4 ring-white dark:ring-gray-900 dark:bg-zinc-200">
+        <svg class="size-4  text-zinc-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
         </svg>
     </span>
-    <h3 class="flex items-center mb-1 text-lg font-semibold text-blue-200 text-wrap mt-2">
-        {title}
-        {
-            latest && <span class="bg-green-400 text-white text-sm me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-500 ms-3 cursor-default">Reciente</span>
-        }
-    </h3>
-    <time class="block mb-2 text-sm font-normal leading-none text-green-200/65">{ date }</time>
-    <p class="mb-4 text-base font-normal text-white/70 text-pretty">{description}</p>
+    <div class="ml-2">
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-blue-200 text-wrap mt-2">
+            {title}
+            {
+                latest && <span class="bg-green-400 text-white text-sm me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-500 ms-3 cursor-default">Reciente</span>
+            }
+        </h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-green-200/65">{ date }</time>
+        <p class="mb-4 text-base font-normal text-white/70 text-pretty">{description}</p>
+    </div>
 </li>
