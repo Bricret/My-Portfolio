@@ -1,17 +1,20 @@
 ---
 import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
 import LinkedinIcon from '../components/icons/Linkedin.astro';
 import MailIcon from '../components/icons/Mail.astro';
 import SocialPill from '../components/SocialPill.astro';
+import Experience from '../components/Experience.astro';
+import BriefCase from '../components/icons/BriefCase.astro';
 ---
 
 <Layout 
 	title="Portfolio de Brian Rico - Desarrollador y Programador web actualmente como Freelance"
 	descripcion='Contrata a Brian para crear tu aplicacion web. Desarrollador Web especializado en crear software sostenible, escalable con una increible experiencia de usuario.'>
 	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<SectionContainer class="py-32 pb-64">
 			<img 
 				class="size-24 rounded-full mb-4"
 				src="/My_Photo.webp" 
@@ -28,10 +31,10 @@ import SocialPill from '../components/SocialPill.astro';
 				</a>
 			</h1>
 			<h2 class="text-2xl text-wrap cursor-default">
-				<span class="text-green-200/90">Freelance</span>
-				<span class="text-blue-200/90"> Desarrollador FullStack y UI Design. ✨</span>
+				<span class="text-green-200">Freelance</span>
+				<span class="text-blue-200"> Desarrollador FullStack y Diseñador de Interfaz de Usuario (UI). ✨</span>
 				<span class="opacity-75">De Chinandega, </span> <span class="text-blue-800/80 font-semibold">Nicaragua. </span> 
-				<span class="opacity-75">Me especializo en crear Webs y aplicaciones Unicas, faciles de mantener y de escalar.</span>
+				<span class="opacity-75"> Me especializo en crear sitios web y aplicaciones únicas, fáciles de mantener y escalar.</span>
 			</h2>
 
 			<nav class="flex gap-x-4 mt-8 absolute">
@@ -48,6 +51,14 @@ import SocialPill from '../components/SocialPill.astro';
 					brian.rico378@gmail.com
 				</SocialPill>
 			</nav>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl font-semibold mb-8 flex gap-x-4 items-center">
+				<BriefCase class="size-8" />
+				Experiencia Laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
 	</main>
 </Layout>
