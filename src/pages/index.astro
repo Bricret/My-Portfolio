@@ -1,16 +1,50 @@
 ---
 import Badge from '../components/Badge.astro';
-import Layout from '../layouts/Layout.astro';;
+import Layout from '../layouts/Layout.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import LinkedinIcon from '../components/icons/Linkedin.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import SocialPill from '../components/SocialPill.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4 ">
+			<img 
+				class="w-24 h-24 rounded-full mb-4"
+				src="/My_Photo.webp" 
+				alt="brian photo"
+			>
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				¡Hola!, soy <span class="text-blue-500">Brian Rico</span> 
-				<div class="flex justify-center items-center"><Badge>Listo para trabajar</Badge></div>
+				<a
+				 href="https://www.linkedin.com/in/brian-rico-51396426a/"
+				 target="_blank"
+				 rel="noopener noreferrer" 
+				 class="flex justify-center items-center">
+					<Badge>Listo para trabajar</Badge>
+				</a>
 			</h1>
-			<h2 class="text-xl opacity-80">Freelance. Desarrollador FullStack y UI Design ✨. De Chinandega, <span class="text-blue-900 font-semibold text-lg">Nicaragua. </span> Me especializo en crear Webs y aplicaciones Unicas, faciles de mantener y de escalar.</h2>
+			<h2 class="text-2xl text-wrap">
+				<span class="text-blue-200/90">Freelance. Desarrollador FullStack y UI Design. ✨</span>
+				 De Chinandega, <span class="text-blue-800/80 font-semibold">Nicaragua. </span> 
+				<span class="opacity-70">Me especializo en crear Webs y aplicaciones Unicas, faciles de mantener y de escalar.</span>
+			</h2>
+
+			<nav class="flex gap-x-2 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/brian-rico-51396426a/">
+					<LinkedinIcon class="w-6 h-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/Bricret">
+					<GitHubIcon class="w-6 h-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill href="https://github.com/Bricret">
+					<MailIcon class="w-6 h-6" />
+					brian.rico378@gmail.com
+				</SocialPill>
+			</nav>
 		</section>
 	</main>
 </Layout>
