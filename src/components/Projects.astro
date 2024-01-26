@@ -1,12 +1,19 @@
 ---
 import GitHub from "./icons/GitHub.astro"
+import NextIcon from "./icons/Next.astro"
+import TailwindIcon from "./icons/Tailwind.astro"
 
 const TAGS = {
     NEXT: {
         name: 'Next.js',
         class: 'bg-black text-white',
-        icon: 
-    }
+        icon: <NextIcon class="size-8" />
+    },
+    TAILWIND: {
+        name: 'Tailwind CSS',
+        class: 'bg-white text-[#73bcf6]',
+        icon: <TailwindIcon class="size-8" />
+    },
 }
 
 const PROJECTS = [
@@ -16,7 +23,7 @@ const PROJECTS = [
         image: '/projects/Project_SakuraCoffee.webp',
         link: 'https://www.google.com',
         github: 'https://github.com/Bricret/sakura-coffee-admin',
-        tags: ['HTML', 'CSS', 'JavaScript']
+        tags: [TAGS.NEXT, TAGS.TAILWIND]
     },
     // {
     //     title: 'Project 2',
