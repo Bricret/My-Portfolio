@@ -4,8 +4,8 @@ import GitHub from "./icons/GitHub.astro"
 
 const PROJECTS = [
     {
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.',
+        title: 'Sistema de inventario y manejo de caja de cafeteria Sakura Coffe Shop',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam',
         image: 'https://via.placeholder.com/300x200',
         link: 'https://www.google.com',
         github: 'https://www.github.com',
@@ -24,18 +24,22 @@ const PROJECTS = [
 
 {
     PROJECTS.map(({ title, description, image, link, github, tags }) => (
-            <section class="w-full flex items-center justify-between mb-10 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6">
-                <a href={link} target="_blank" class="w-1/2 cursor-pointer overflow-hidden rounded-lg">
-                    <img src={image} alt={title} class="w-full h-auto" />
+    <section class="w-full flex flex-col items-center justify-between mb-10 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6">
+        <a href={link} target="_blank" class="w-full h-80 cursor-pointer overflow-hidden rounded-lg">
+            <img src={image} alt={title} class="w-full h-full  object-cover flex-shrink-0" />
+        </a>
+        <div class="w-full flex flex-col items-start justify-between pl-6 text-black">
+            <span class="my-2 w-full text-left text-xl font-bold">{title}</span>
+            <p class="my-2 font-medium text-black/50 text-pretty">{description}</p>
+            <div class="mt-2 flex items-center h-auto">
+                <a href={github} target="_blank" class="w-10"> <GitHub class="size-8"/> </a>
+                <a href={link} target="_blank" 
+                    class="ml-4 rounded-lg bg-black text-white p-2 px-4 text-base font-semibold">
+                    Visita el Proyecto!
                 </a>
-                <div class="w-1/2 flex flex-col items-start justify-between pl-6 text-black">
-                    <span class="my-2 w-full text-left text-2xl font-bold">{title}</span>
-                    <p class="my-2 font-medium text-black/50 text-pretty">{description}</p>
-                    <div>
-                        <a href={github} target="_blank"> <GitHub class="size-6"/> </a>
-                        <a href={link} target="_blank" class="">Visita el Proyecto!</a>
-                    </div>
-                </div>
-            </section>
-        ))
+            </div>
+        </div>
+    </section>
+    ))
+
     }    
