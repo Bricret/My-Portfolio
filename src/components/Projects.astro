@@ -3,6 +3,8 @@ import GitHub from "./icons/GitHub.astro"
 import NextIcon from "./icons/Next.astro"
 import TailwindIcon from "./icons/Tailwind.astro"
 import PrismaIcon from "./icons/Prisma.astro"
+import TypeScriptIcon from "./icons/TypeScript.astro"
+import MysqlIcon from "./icons/MySql.astro"
 
 const TAGS = {
     NEXT: {
@@ -20,16 +22,26 @@ const TAGS = {
         class: 'bg-[#1B5299] text-white',
         icon: PrismaIcon
     },
+    TYPESCRIPT: {
+        name: 'TypeScript',
+        class: 'bg-[#003159] text-white',
+        icon: TypeScriptIcon
+    },
+    MYSQL: {
+        name: 'MySQL',
+        class: 'bg-[#003159] text-white',
+        icon: MysqlIcon
+    },
 }
 
 const PROJECTS = [
     {
         title: 'Sistema de inventario y manejo de caja de cafeteria Sakura Coffe Shop',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam',
+        description: 'El proyecto consiste en un sistema de inventario y manejo de caja para una cafeteria, el cual permite llevar un control de los productos que se venden, control de pedidos, el dinero que se tiene en caja, y el dinero que se ha ganado en el dia. Realiza cierre de caja y permite ver el historial de ventas. Genera multiples Excel de reportes filtrados por Fechas asi como tambien una gran seguridad en el manejo de los datos.',
         image: '/projects/Project_SakuraCoffee.webp',
         link: 'https://www.google.com',
         github: 'https://github.com/Bricret/sakura-coffee-admin',
-        tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PRISMA]
+        tags: [TAGS.NEXT,  TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.PRISMA, TAGS.MYSQL ]
     },
     // {
     //     title: 'Project 2',
@@ -50,13 +62,13 @@ const PROJECTS = [
             <img src={image} alt={title} class="w-full h-full  object-cover flex-shrink-0" />
         </a>
         <div class="w-full flex flex-col items-start justify-between pl-6 text-black">
-            <span class="my-2 w-10/12 text-left text-2xl font-bold">{title}</span>
+            <span class="mt-4 text-left text-2xl font-bold">{title}</span>
             <p class="my-2 font-medium text-black/50 text-pretty">{description}</p>
             <ul class="flex items-center gap-x-2 my-4">
             {
                 tags.map((tag) => (
                     <li >
-                        <span class={`flex gap-x- items-center rounded-full text-sm ${tag.class} py-1 px-2`}>
+                        <span class={`flex gap-x- items-center rounded-full text-sm ${tag.class} py-1.5 px-3 cursor-default`}>
                             <tag.icon class={`size-7 mr-1`} />
                             {tag.name}
                         </span>
