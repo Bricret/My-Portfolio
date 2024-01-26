@@ -1,14 +1,21 @@
 ---
 import GitHub from "./icons/GitHub.astro"
 
+const TAGS = {
+    NEXT: {
+        name: 'Next.js',
+        class: 'bg-black text-white',
+        icon: 
+    }
+}
 
 const PROJECTS = [
     {
         title: 'Sistema de inventario y manejo de caja de cafeteria Sakura Coffe Shop',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam',
-        image: 'https://via.placeholder.com/300x200',
+        image: '/projects/Project_SakuraCoffee.webp',
         link: 'https://www.google.com',
-        github: 'https://www.github.com',
+        github: 'https://github.com/Bricret/sakura-coffee-admin',
         tags: ['HTML', 'CSS', 'JavaScript']
     },
     // {
@@ -29,8 +36,17 @@ const PROJECTS = [
             <img src={image} alt={title} class="w-full h-full  object-cover flex-shrink-0" />
         </a>
         <div class="w-full flex flex-col items-start justify-between pl-6 text-black">
-            <span class="my-2 w-full text-left text-xl font-bold">{title}</span>
+            <span class="my-2 w-10/12 text-left text-2xl font-bold">{title}</span>
             <p class="my-2 font-medium text-black/50 text-pretty">{description}</p>
+            <p class="flex items-center gap-x-4 my-2">
+            {
+                tags.map((tag) => (
+                    <span class="text-sm font-medium  text-black/50">
+                        {tag}
+                    </span>
+                ))
+            }
+            </p>
             <div class="mt-2 flex items-center h-auto">
                 <a href={github} target="_blank" class="w-10"> <GitHub class="size-8"/> </a>
                 <a href={link} target="_blank" 
