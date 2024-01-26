@@ -2,17 +2,23 @@
 import GitHub from "./icons/GitHub.astro"
 import NextIcon from "./icons/Next.astro"
 import TailwindIcon from "./icons/Tailwind.astro"
+import PrismaIcon from "./icons/Prisma.astro"
 
 const TAGS = {
     NEXT: {
         name: 'Next.js',
-        class: 'bg-black text-white',
+        class: 'bg-black/80 text-white',
         icon:NextIcon
     },
     TAILWIND: {
         name: 'Tailwind CSS',
-        class: 'bg-white text-[#73bcf6]',
+        class: 'bg-[#003159] text-white',
         icon: TailwindIcon
+    },
+    PRISMA: {
+        name: 'Prisma',
+        class: 'bg-[#1B5299] text-white',
+        icon: PrismaIcon
     },
 }
 
@@ -23,7 +29,7 @@ const PROJECTS = [
         image: '/projects/Project_SakuraCoffee.webp',
         link: 'https://www.google.com',
         github: 'https://github.com/Bricret/sakura-coffee-admin',
-        tags: [TAGS.NEXT, TAGS.TAILWIND]
+        tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.PRISMA]
     },
     // {
     //     title: 'Project 2',
@@ -38,22 +44,26 @@ const PROJECTS = [
 
 {
     PROJECTS.map(({ title, description, image, link, github, tags }) => (
-    <section class="w-full flex flex-col items-center justify-between mb-10 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6">
+    <section class="w-full flex flex-col items-center justify-between mb-10 rounded-3xl border border-solid border-black bg-white/90 shadow-2xl p-6 relative">
+        <div class="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-black" />
         <a href={link} target="_blank" class="w-full h-80 cursor-pointer overflow-hidden rounded-lg">
             <img src={image} alt={title} class="w-full h-full  object-cover flex-shrink-0" />
         </a>
         <div class="w-full flex flex-col items-start justify-between pl-6 text-black">
             <span class="my-2 w-10/12 text-left text-2xl font-bold">{title}</span>
             <p class="my-2 font-medium text-black/50 text-pretty">{description}</p>
-            <p class="flex items-center gap-x-4 my-2">
+            <ul class="flex items-center gap-x-2 my-4">
             {
                 tags.map((tag) => (
-                    <span class="text-sm font-medium  text-black/50">
-                        {tag}
-                    </span>
+                    <li >
+                        <span class={`flex gap-x- items-center rounded-full text-sm ${tag.class} py-1 px-2`}>
+                            <tag.icon class={`size-7 mr-1`} />
+                            {tag.name}
+                        </span>
+                    </li>
                 ))
             }
-            </p>
+            </ul>
             <div class="mt-2 flex items-center h-auto">
                 <a href={github} target="_blank" class="w-10"> <GitHub class="size-8"/> </a>
                 <a href={link} target="_blank" 
