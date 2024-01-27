@@ -58,7 +58,7 @@ const PROJECTS = [
     PROJECTS.map(({ title, description, image, link, github, tags }) => (
     <section class="w-full flex flex-col items-center justify-between mb-10 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6 relative">
         <div class="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-zinc-500" />
-        <a href={link} target="_blank" class="w-full h-80 cursor-pointer overflow-hidden rounded-lg">
+        <a href={link} target="_blank" class="w-full h-72 cursor-pointer overflow-hidden rounded-lg">
             <img src={image} alt={title} class="w-full h-full  object-cover flex-shrink-0" />
         </a>
         <div class="w-full flex flex-col items-start justify-between pl-6 text-black">
