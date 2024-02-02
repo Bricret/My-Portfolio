@@ -9,19 +9,16 @@ import SocialPill from '../components/SocialPill.astro';
 import Experience from '../components/Experience.astro';
 import BriefCase from '../components/icons/BriefCase.astro';
 import CodeIcon from '../components/icons/Code.astro';
+import TecnologyIcon from '../components/icons/Tecnology.astro';
 import Projects from '../components/Projects.astro';
+import { TestFramer } from '../components/TestFramer';
 ---
 
 <Layout 
 	title="Portfolio de Brian Rico - Desarrollador y Programador web actualmente como Freelance"
 	descripcion='Contrata a Brian para crear tu aplicacion web. Desarrollador Web especializado en crear software sostenible, escalable con una increible experiencia de usuario.'>
-	<main class="px-4">
+	<main class="px-4">		
 		<SectionContainer class="py-36 pb-32">
-			<img 
-				class="size-24 rounded-full mb-4"
-				src="/My_Photo.webp" 
-				alt="brian photo"
-			>
 			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 				¡Hola!, soy <span class="text-sky-500">Brian Rico</span> 
 				<a
@@ -68,6 +65,13 @@ import Projects from '../components/Projects.astro';
 				Proyectos
 			</h2>
 			<Projects />
+		</SectionContainer>
+
+		<SectionContainer class="pt-32">
+			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
+				<TecnologyIcon class="size-8" />
+				Tecnologias
+			</h2>
 		</SectionContainer>
 	</main>
 </Layout>
