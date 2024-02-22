@@ -11,7 +11,7 @@ import BriefCase from '../components/icons/BriefCase.astro';
 import CodeIcon from '../components/icons/Code.astro';
 import TecnologyIcon from '../components/icons/Tecnology.astro';
 import Projects from '../components/Projects.astro';
-import { TestFramer } from '../components/TestFramer';
+import { Image } from 'astro:assets';
 ---
 
 <Layout 
@@ -19,36 +19,43 @@ import { TestFramer } from '../components/TestFramer';
 	descripcion='Contrata a Brian para crear tu aplicacion web. Desarrollador Web especializado en crear software sostenible, escalable con una increible experiencia de usuario.'>
 	<main class="px-4">		
 		<SectionContainer class="py-36 pb-32">
-			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-				¡Hola!, soy <span class="text-sky-500">Brian Rico</span> 
-				<a
-				 href="https://www.linkedin.com/in/brian-rico-51396426a/"
-				 target="_blank"
-				 rel="noopener noreferrer" 
-				 class="flex justify-center items-center">
-					<Badge>Listo para trabajar</Badge>
-				</a>
-			</h1>
-			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px] cursor-default">
-				<span class="text-sky-200">Freelance. Desarrollador FullStack y Diseñador de Interfaz de Usuario (UI). ✨</span>
-				<span class="opacity-75">De Chinandega, </span> <span class="text-white font-semibold">Nicaragua. </span> 
-				<span class="opacity-75"> Me especializo en crear sitios web y aplicaciones únicas, fáciles de mantener y escalar.</span>
-			</h2>
+			<section>
+				<article>
+					<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+						¡Hola!, soy <span class="text-sky-500">Brian Rico</span> 
+						<a
+						 href="https://www.linkedin.com/in/brian-rico-51396426a/"
+						 target="_blank"
+						 rel="noopener noreferrer" 
+						 class="flex justify-center items-center">
+							<Badge>Listo para trabajar</Badge>
+						</a>
+					</h1>
+					<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px] cursor-default">
+						<span class="text-sky-200">Freelance. Desarrollador FullStack y Diseñador de Interfaz de Usuario (UI). ✨</span>
+						<span class="opacity-75">De Chinandega, </span> <span class="text-white font-semibold">Nicaragua. </span> 
+						<span class="opacity-75"> Me especializo en crear sitios web y aplicaciones únicas, fáciles de mantener y escalar.</span>
+					</h2>
+		
+					<nav class="flex gap-4 mt-8 flex-wrap">
+						<SocialPill href="https://www.linkedin.com/in/brian-rico-51396426a/">
+							<LinkedinIcon class="size-4 lg:size-6" />
+							LinkedIn
+						</SocialPill>
+						<SocialPill href="https://github.com/Bricret">
+							<GitHubIcon class="size-4 lg:size-6" />
+							GitHub
+						</SocialPill>
+						<SocialPill href="mailto:brian.rico378@gmail.com">
+							<MailIcon class="size-4 lg:size-6" />
+							brian.rico378@gmail.com
+						</SocialPill>
+					</nav>
+				</article>
+				<!-- <Image>
 
-			<nav class="flex gap-4 mt-8 flex-wrap">
-				<SocialPill href="https://www.linkedin.com/in/brian-rico-51396426a/">
-					<LinkedinIcon class="size-4 lg:size-6" />
-					LinkedIn
-				</SocialPill>
-				<SocialPill href="https://github.com/Bricret">
-					<GitHubIcon class="size-4 lg:size-6" />
-					GitHub
-				</SocialPill>
-				<SocialPill href="mailto:brian.rico378@gmail.com">
-					<MailIcon class="size-4 lg:size-6" />
-					brian.rico378@gmail.com
-				</SocialPill>
-			</nav>
+				</Image> -->
+			</section>
 		</SectionContainer>
 
 		<SectionContainer id="experiencia" class="pb-32">
@@ -67,7 +74,7 @@ import { TestFramer } from '../components/TestFramer';
 			<Projects />
 		</SectionContainer>
 
-		<SectionContainer class="pt-32">
+		<SectionContainer id="tecnologias" class="pt-32">
 			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
 				<TecnologyIcon class="size-8" />
 				Tecnologias

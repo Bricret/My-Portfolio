@@ -43,21 +43,21 @@ const PROJECTS = [
         github: 'https://github.com/Bricret/sakura-coffee-admin',
         tags: [TAGS.NEXT,  TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.PRISMA, TAGS.MYSQL ]
     },
-    // {
-    //     title: 'Project 2',
-    //     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Donec auctor, nisl vitae tincidunt ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.',
-    //     image: 'https://via.placeholder.com/300x200',
-    //     link: 'https://www.google.com',
-    //     github: 'https://www.github.com',
-    //     tags: ['HTML', 'CSS', 'JavaScript']
-    // },
+    {
+        title: 'Repositorio de Tesis de la facultad de Ciencias y Tecnologias de la UNAN-Leon',
+        description: 'Sitio web diseñado con el fin de ayudar al cuerpo estudiantil de la Facultad de Ciencias y Tecnologías a encontrar cualquier tesis de su facultad de manera rápida y sencilla. Cuenta con un potente buscador con filtros para facilitar la búsqueda de la tesis deseada y poder descargarla.',
+        image: '/projects/repositorio.png',
+        link: 'https://www.google.com',
+        github: 'https://www.github.com',
+        tags: [TAGS.NEXT,  TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.PRISMA, TAGS.MYSQL ]
+    },
 ]
 ---
 
 {
     PROJECTS.map(({ title, description, image, link, github, tags }) => (
-    <section class="w-full flex flex-col items-center justify-between mb-10 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6 relative">
-        <div class="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-zinc-500" />
+    <section class="w-full flex flex-col items-center justify-between mb-20 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6 relative">
+        <div class="absolute top-0 -right-3 -z-10 w-[102%] min-h-[102%] rounded-[2rem] bg-zinc-500" />
         <a href={link} target="_blank" class="w-full h-72 cursor-pointer overflow-hidden rounded-lg">
             <img src={image} alt={title} class="w-full h-full  object-cover flex-shrink-0" />
         </a>
