@@ -5,6 +5,8 @@ import TailwindIcon from "./icons/Tailwind.astro"
 import PrismaIcon from "./icons/Prisma.astro"
 import TypeScriptIcon from "./icons/TypeScript.astro"
 import MysqlIcon from "./icons/MySql.astro"
+import JavaScriptIcon from "./icons/JavaScript.astro"
+import SupaBaseIcon from "./icons/SupaBase.astro"
 
 const TAGS = {
     NEXT: {
@@ -22,10 +24,20 @@ const TAGS = {
         class: 'bg-[#1B5299] text-white',
         icon: PrismaIcon
     },
+    SUPABASE: {
+        name: 'Supabase',
+        class: 'bg-[#497763] text-white',
+        icon: SupaBaseIcon
+    },
     TYPESCRIPT: {
         name: 'TypeScript',
         class: 'bg-[#003159] text-white',
         icon: TypeScriptIcon
+    },
+    JAVASCRIPT: {
+        name: 'JavaScript',
+        class: 'bg-[#cbb714]',
+        icon: JavaScriptIcon
     },
     MYSQL: {
         name: 'MySQL',
@@ -37,7 +49,7 @@ const TAGS = {
 const PROJECTS = [
     {
         title: 'Sistema de inventario y manejo de caja de cafeteria Sakura Coffe Shop',
-        description: 'El proyecto consiste en un sistema de inventario y manejo de caja para una cafeteria, el cual permite llevar un control de los productos que se venden, control de pedidos, el dinero que se tiene en caja, y el dinero que se ha ganado en el dia. Realiza cierre de caja y permite ver el historial de ventas. Genera multiples Excel de reportes filtrados por Fechas asi como tambien una gran seguridad en el manejo de los datos.',
+        description: 'El proyecto consiste en un sistema de inventario y gestión de caja para una cafetería. Este sistema posibilita llevar un control detallado de los productos vendidos, gestionar pedidos, monitorizar el efectivo disponible en caja y registrar las ganancias diarias. Además, facilita la realización de cierres de caja y proporciona acceso al historial completo de ventas. La aplicación genera múltiples archivos Excel con informes filtrados por fechas, ofreciendo así un análisis detallado de las transacciones. Destaca por su alto nivel de seguridad en el manejo de datos, asegurando la confidencialidad y integridad de la información.',
         image: '/projects/Project_SakuraCoffee.webp',
         link: 'https://www.google.com',
         github: 'https://github.com/Bricret/sakura-coffee-admin',
@@ -47,9 +59,9 @@ const PROJECTS = [
         title: 'Repositorio de Tesis de la facultad de Ciencias y Tecnologias de la UNAN-Leon',
         description: 'Sitio web diseñado con el fin de ayudar al cuerpo estudiantil de la Facultad de Ciencias y Tecnologías a encontrar cualquier tesis de su facultad de manera rápida y sencilla. Cuenta con un potente buscador con filtros para facilitar la búsqueda de la tesis deseada y poder descargarla.',
         image: '/projects/repositorio.png',
-        link: 'https://www.google.com',
+        link: 'https://repositorio-unan-leon.vercel.app/',
         github: 'https://www.github.com',
-        tags: [TAGS.NEXT,  TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.PRISMA, TAGS.MYSQL ]
+        tags: [TAGS.NEXT,  TAGS.JAVASCRIPT, TAGS.TAILWIND, TAGS.SUPABASE ]
     },
 ]
 ---
