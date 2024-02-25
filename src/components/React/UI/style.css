@@ -1,0 +1,9 @@
+.container {
+    overflow-y: auto; /* Ocultar la barra de desplazamiento para IE, Edge y Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .container::-webkit-scrollbar {
+    display: none; /* Ocultar la barra de desplazamiento para Chrome, Safari y Opera */
+  }
