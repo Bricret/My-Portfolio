@@ -23,9 +23,9 @@ export function Hero() {
             <Badge>Listo para trabajar</Badge>
           </a>
         </h1>
-        <h2 className="text-xl lg:text-2xl text-wrap max-w-[700px] cursor-default">
-          <span className="text-sky-200">Freelance. Desarrollador FullStack y Diseñador de Interfaz de Usuario (UI). ✨</span>
-          <span className="opacity-75 ">De Chinandega, </span> <span className="text-white font-semibold">Nicaragua. </span> 
+        <h2 className="text-xl lg:text-2xl opacity-75 text-wrap max-w-[700px] cursor-default">
+          <span className="text-sky-200">Freelance. Desarrollador FullStack ✨.</span> Diseñador de Interfaz de Usuario (UI)
+          <span className="opacity-75"> De Chinandega, </span> <span className="text-white font-semibold">Nicaragua. </span> 
           <span className="opacity-75"> Me especializo en crear sitios web y aplicaciones únicas, fáciles de mantener y escalar.</span>
         </h2>
 
