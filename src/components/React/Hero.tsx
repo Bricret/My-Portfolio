@@ -11,7 +11,7 @@ import { SocialPill } from "./UI/SocialPill";
 
 export function Hero() {
   return (
-    <section className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
+    <section className="h-[30rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
       <article className="relative z-10 text-lg md:text-7xl bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600">
         <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
           ¡Hola!, soy <span className="text-sky-500">Brian Rico</span> 

@@ -10,6 +10,7 @@ import TecnologyIcon from '../components/icons/Tecnology.astro';
 import Projects from '../components/Projects.astro';
 import { Tecnologys } from '../components/React/Tecnologys'
 import { Hero } from '../components/React/Hero'
+import { TextGenerate } from '../components/React/TextGenerate'
 import { Image } from 'astro:assets';
 ---
 
@@ -42,5 +43,9 @@ import { Image } from 'astro:assets';
 			<Tecnologys client:visible/>
 		</SectionContainer>
 
+		<SectionContainer id="sobre-mi" class="pt-32">
+			<TextGenerate client:visible/>
+		</SectionContainer >
+
 	</main>
-</Layout>../components/React/Tecnologys
+</Layout>
