@@ -53,7 +53,7 @@ const PROJECTS = [
         image: '/projects/Project_SakuraCoffee.webp',
         link: 'https://sakura-coffee-shop-admin-test.vercel.app',
         github: 'https://github.com/Bricret/sakura-coffee-admin',
-        details: 'Usuario: sakura. Contraseña: 123',
+        details: 'Usuario: admin Contraseña: 123',
         tags: [TAGS.NEXT,  TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.PRISMA, TAGS.MYSQL ]
     },
     {
@@ -78,7 +78,7 @@ const PROJECTS = [
             <span class="mt-4 text-left text-2xl font-bold">{title}</span>
             <p class="my-2 font-medium text-black/90 text-pretty">{description}</p>
             <p class="my-2 font-bold text-black">{details}</p>
-            <ul class="flex items-center gap-x-2 my-4">
+            <ul class="flex items-center gap-x-2 gap-y-4 my-4 max-w-full flex-wrap">
             {
                 tags.map((tag) => (
                     <li >
