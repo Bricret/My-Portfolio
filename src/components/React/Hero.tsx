@@ -30,10 +30,12 @@ export function Hero() {
         </h2>
 
         <nav className="flex gap-4 mt-8 flex-wrap">
-          <SocialPill href="https://www.linkedin.com/in/brian-rico-51396426a/">
-            <LinkedinIcon/>
-            LinkedIn
-          </SocialPill>
+          <div className="hidden md:flex">
+            <SocialPill href="https://www.linkedin.com/in/brian-rico-51396426a/">
+              <LinkedinIcon/>
+              LinkedIn
+            </SocialPill>
+          </div>
           <SocialPill href="https://github.com/Bricret">
             <GitHubIcon/>
             GitHub
