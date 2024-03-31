@@ -21,7 +21,7 @@ export function TextGenerate() {
   ];
   return (
     <main className="flex flex-col items-center justify-center h-[40rem]  ">
-      <p className="text-neutral-200 text-xs sm:text-base  ">
+      <p className="text-neutral-200 text-xl sm:text-base  ">
         Muchas Gracias por ver mi Portafolio.
       </p>
       <TypewriterEffectSmooth words={words} />
@@ -32,7 +32,7 @@ export function TextGenerate() {
           target="_blank"
           rel="noopener noreferrer" 
         >
-          <img src="./Tecnologys/whatsapp.svg" alt="WhatsApp logo" className='w-[35px] h-[35px]' />
+          <img src="./TecnologySVG/whatsapp.svg" alt="WhatsApp logo" className='w-[35px] h-[35px]' />
           <span className='text-sm min-[2600px]:text-4xl'>WhatsApp</span>
         </a>
         <a 
@@ -41,7 +41,7 @@ export function TextGenerate() {
           target="_blank"
           rel="noopener noreferrer" 
         >
-            <img src="./Tecnologys/gmail.svg" alt="Gmail logo" className='w-[35px] h-[35px]' />
+            <img src="./TecnologySVG/gmail.svg" alt="Gmail logo" className='w-[35px] h-[35px]' />
             <span className='text-sm min-[2600px]:text-4xl'>Gmail</span>
         </a>
       </section>

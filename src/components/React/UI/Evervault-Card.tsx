@@ -54,7 +54,7 @@ export const EvervaultCard = ({
           <section className="relative h-44 w-full flex flex-col text-white font-bold text-4xl">
             <div className="absolute w-full h-full blur-sm" />
             <h3 className={`text-center mb-8 text-2xl font-bold cursor-default lg:text-4xl lg:break-words bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-transparent z-20 ${styleText}`}>{text}</h3>
-            <ul className="grid grid-cols-3 gap-x-14 md:gap-x-20 gap-y-6 w-full">
+            <ul className="grid grid-cols-3 gap-x-12 md:gap-x-20 gap-y-6 w-full">
             {
                 data.map(({Title, Icon}) => (
                     <li className="rounded-2xl  group flex flex-col fle justify-center items-center" key={Title}>
