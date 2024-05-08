@@ -34,8 +34,8 @@ export const FrontendTecnologys = [
         Title: 'Next.js'
     },
     {
-        Icon: '/TecnologySVG/Flutter.svg',
-        Title: 'Flutter'
+        Icon: '/TecnologySVG/React.svg',
+        Title: 'React Native'
     },
 ]
 
