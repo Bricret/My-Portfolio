@@ -83,14 +83,6 @@ export const BackendTecnologys = [
         Title: 'Node.js'
     },
     {
-        Icon: '/TecnologySVG/Php.svg',
-        Title: 'Php'
-    },
-    {
-        Icon: '/TecnologySVG/Python.svg',
-        Title: 'Python'
-    },
-    {
         Icon: '/TecnologySVG/Nest.svg',
         Title: 'NestJS'
     },
@@ -109,10 +101,6 @@ export const BackendTecnologys = [
     {
         Icon: '/TecnologySVG/MongoDB.svg',
         Title: 'MongoDB'
-    },
-    {
-        Icon: '/TecnologySVG/Dart.svg',
-        Title: 'Dart'
     },
 ]
 export const LearningTecnologys = [
