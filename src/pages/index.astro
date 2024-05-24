@@ -1,50 +1,11 @@
----
-import Badge from '../components/Badge.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import Layout from '../layouts/Layout.astro';
-
-import Experience from '../components/Experience.astro';
-import BriefCase from '../components/icons/BriefCase.astro';
-import CodeIcon from '../components/icons/Code.astro';
-import TecnologyIcon from '../components/icons/Tecnology.astro';
-import Projects from '../components/Projects.astro';
-import { Tecnologys } from '../components/React/Tecnologys'
-import { Hero } from '../components/React/Hero'
-import { TextGenerate } from '../components/React/TextGenerate'
----
-
-<Layout 
-	title="Portfolio de Brian Rico - Desarrollador y Programador web actualmente como Freelance"
-	descripcion='Contrata a Brian para crear tu aplicacion web. Desarrollador Web especializado en crear software sostenible, escalable con una increible experiencia de usuario.'>
-	<main class="px-4 md:px-0">
-		<Hero client:visible/>
-		<SectionContainer id="experiencia" class="pb-32">
-			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
-				<BriefCase class="size-8" />
-				Experiencia Laboral
-			</h2>
-			<Experience />
-		</SectionContainer>
-		
-		<SectionContainer id="proyectos">
-			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
-				<CodeIcon class="size-8" />
-				Proyectos
-			</h2>
-			<Projects />
-		</SectionContainer>
-
-		<SectionContainer id="tecnologias" class="pt-32">
-			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
-				<TecnologyIcon class="size-8" />
-				Tecnologias
-			</h2>
-			<Tecnologys client:visible/>
-		</SectionContainer>
-
-		<SectionContainer id="gracias" class="pt-32">
-			<TextGenerate client:visible/>
-		</SectionContainer >
-
-	</main>
-</Layout>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Astro description" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="refresh" content="0; url=/es">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+  <title>Portfolio de Brian Rico - Desarrollador y Programador web actualmente como Freelance</title>
+</head>

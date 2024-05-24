@@ -1,0 +1,36 @@
+{
+    "info-page": {
+        "title": "Brian Rico's Portfolio - Web Developer and Programmer currently as Freelance",
+        "description": "Hire Brian to create your web application. Web Developer specialized in creating sustainable, scalable software with an incredible user experience."
+    },
+    "navbar": {
+        "exp": "Experience",
+        "project": "projects",
+        "tech": "Technologies",
+        "thx": "Thanks"
+    },
+    "hero": {
+        "title": "Hello!, I'm",
+        "name": "Brian Rico",
+        "chip": "Ready to work",
+        "desc1": "Freelance. FullStack Developer ✨.",
+        "desc2": " User Interface Designer (UI/UX) ",
+        "desc3": "From Chinandega,",
+        "desc4": " Nicaragua. ",
+        "desc5": "I specialize in creating unique, easy-to-maintain and scalable websites and applications."
+    },
+    "exp-section": {
+        "title": "Work Experience"
+    },
+    "project-section": {
+        "title": "Projects",
+        "btn": "Visit the Project!"
+    },
+    "tech-section": {
+        "title": "Technologies"
+    },
+    "thx-section": {
+        "title": "Thank you for visiting my portfolio"
+    }
+    
+}

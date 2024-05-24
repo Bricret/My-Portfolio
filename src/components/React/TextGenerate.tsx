@@ -1,28 +1,11 @@
+import { words } from '../data/thx';
 import { TypewriterEffectSmooth } from './UI/TypeWrite'
 
 export function TextGenerate() {
-  const words = [
-    {
-      text: "Impaciente",
-    },
-    {
-      text: "por",
-    },
-    {
-      text: "trabajar",
-    },
-    {
-      text: "con",
-    },
-    {
-      text: "ustedes.",
-      className: "text-blue-500",
-    },
-  ];
   return (
     <main className="flex flex-col items-center justify-center h-[40rem]  ">
       <p className="text-neutral-200 text-xl sm:text-base  ">
-        Muchas Gracias por ver mi Portafolio.
+        Gracias por visitar mi portafolio
       </p>
       <TypewriterEffectSmooth words={words} />
       <section className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">

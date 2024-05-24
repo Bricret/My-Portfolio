@@ -6,9 +6,10 @@ import Header from "../components/Header.astro"
 interface Props {
 	title: string;
 	descripcion: string;
+	lenguage: string;
 }
 
-const { descripcion, title } = Astro.props;
+const { descripcion, title, lenguage } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,7 +23,7 @@ const { descripcion, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header />
+		<Header lenguage={lenguage} />
 		<slot />
 		<Footer />
 	</body>

@@ -1,0 +1,36 @@
+{
+    "info-page": {
+        "title": "Portfolio de Brian Rico - Desarrollador y Programador web actualmente como Freelance",
+        "description": "Contrata a Brian para crear tu aplicacion web. Desarrollador Web especializado en crear software sostenible, escalable con una increible experiencia de usuario."
+    },
+    "navbar": {
+        "exp": "Experiencia",
+        "project": "proyectos",
+        "tech": "Tecnologías",
+        "thx": "Gracias"
+    },
+    "hero": {
+        "title": "¡Hola!, soy",
+        "name": "Brian Rico",
+        "chip": "Listo para trabajar",
+        "desc1": "Freelance. Desarrollador FullStack ✨.",
+        "desc2": " Diseñador de Interfaz de Usuario (UI/UX) ",
+        "desc3": "De Chinandega,",
+        "desc4": " Nicaragua. ",
+        "desc5": "Me especializo en crear sitios web y aplicaciones únicas, fáciles de mantener y escalar."
+    },
+    "exp-section": {
+        "title": "Experiencia Laboral"
+    },
+    "project-section": {
+        "title": "Proyectos",
+        "btn": "Visita el Proyecto!"
+    },
+    "tech-section": {
+        "title": "Tecnologías"
+    },
+    "thx-section": {
+        "title": "Gracias por visitar mi portafolio"
+    }
+    
+}
