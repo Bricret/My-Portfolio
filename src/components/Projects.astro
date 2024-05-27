@@ -1,10 +1,15 @@
 ---
 import GitHub from "./icons/GitHub.astro";
-import { ProjectsEs } from "./data/Projects";
+import { ProjectsEs, ProjectsEn } from "./data/Projects";
+import es from '../utils/assets/es.json';
+import en from '../utils/assets/en.json';
+
+const { lenguage } = Astro.props
+const PROYECTS = lenguage === "es" ? ProjectsEs : ProjectsEn
 ---
 
 {
-  ProjectsEs.map(
+  PROYECTS.map(
     ({ title, description, image, link, github, tags, details }) => (
       <section class="relative w-full flex flex-col items-center justify-between mb-20 rounded-3xl border border-solid border-black bg-white shadow-2xl p-6">
         <div class="absolute top-0 -right-3 -z-10 w-[102%] min-h-[102%] rounded-[2rem] bg-zinc-500" />
@@ -53,7 +58,7 @@ import { ProjectsEs } from "./data/Projects";
               target="_blank"
               class="ml-4 rounded-lg bg-black text-white p-2 px-4 text-base font-semibold hover:scale-110 transition"
             >
-              Visita el Proyecto!
+              { lenguage === "es" ? es["project-section"].btn : en["project-section"].btn }
             </a>
           </div>
         </div>

@@ -1,13 +1,20 @@
-import { words } from '../data/thx';
 import { TypewriterEffectSmooth } from './UI/TypeWrite'
+import en from '../../utils/assets/en.json';
+import es from '../../utils/assets/es.json';
+import { wordsEn, wordsEs } from '../data/thx';
 
-export function TextGenerate() {
+interface Props {
+  lenguage: string;
+}
+
+export function TextGenerate( { lenguage }: Props ) {
+  const CONDICION = lenguage === 'es';
   return (
     <main className="flex flex-col items-center justify-center h-[40rem]  ">
       <p className="text-neutral-200 text-xl sm:text-base  ">
-        Gracias por visitar mi portafolio
+        { CONDICION ? es['thx-section'].title : en['thx-section'].title }
       </p>
-      <TypewriterEffectSmooth words={words} />
+      <TypewriterEffectSmooth words={ CONDICION ? wordsEs : wordsEn } />
       <section className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
         <a 
           className="bg-gradient-to-r border rounded-lg px-4 py-2 min-[2600px]:px-6 min-[2600px]:py-4 border-[#136949] from-[#00150D] to-[#00150D50] flex items-center justify-center gap-x-2 min-[2600px]:gap-x-4"

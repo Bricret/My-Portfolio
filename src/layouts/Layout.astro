@@ -23,9 +23,9 @@ const { descripcion, title, lenguage } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header lenguage={lenguage} />
+		<Header lenguage={ lenguage } />
 		<slot />
-		<Footer />
+		<Footer lenguage={ lenguage } />
 	</body>
 </html>
 <style is:global>

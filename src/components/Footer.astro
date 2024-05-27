@@ -1,22 +1,39 @@
+---
+const { lenguage } = Astro.props
+const CONDITION = lenguage === 'es'
+---
+
+
 <footer class="relative rounded-lg shadow m-4 bg-[#050505]/20 backdrop-blur-lg  py-5 w-full xl:w-[1120px] mx-auto">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://github.com/Bricret" class="hover:underline" target="_blank">Brian Rico</a>. Creado con ❤️.
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://github.com/Bricret" class="hover:underline" target="_blank">Brian Rico</a>. 
+        { CONDITION ? 'Creado con ❤️' : 'Made with ❤️' }
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="#top" class="hover:underline me-4 md:me-6">Inicio</a>
+            <a href="#top" class="hover:underline me-4 md:me-6">
+                { CONDITION ? 'Inicio' : 'Home' }
+            </a>
         </li>
         <li>
-            <a href="#experiencia" class="hover:underline me-4 md:me-6">Experiencia</a>
+            <a href="#experiencia" class="hover:underline me-4 md:me-6">
+                { CONDITION ? 'Experiencia' : 'Experience' }
+            </a>
         </li>
         <li>
-            <a href="#proyectos" class="hover:underline me-4 md:me-6">Proyectos</a>
+            <a href="#proyectos" class="hover:underline me-4 md:me-6">
+                { CONDITION ? 'Proyectos' : 'Projects' }
+            </a>
         </li>
         <li>
-            <a href="#tecnologias" class="hover:underline me-4 md:me-6">tecnologias</a>
+            <a href="#tecnologias" class="hover:underline me-4 md:me-6">
+                { CONDITION ? 'Tecnologías' : 'Technologies' }
+            </a>
         </li>
         <li>
-            <a href="#gracias" class="hover:underline">Gracias</a>
+            <a href="#gracias" class="hover:underline">
+                { CONDITION ? 'Gracias' : 'Thanks' }
+            </a>
         </li>
     </ul>
     </div>

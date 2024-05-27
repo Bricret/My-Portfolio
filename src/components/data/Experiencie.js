@@ -12,3 +12,18 @@ export const experiencieEs = [
         latest: false,
     }
 ]
+
+export const experiencieEn = [
+    {
+        title: 'Freelance: Comprehensive Inventory System and Cash Automation',
+        date: 'Done in January 2024',
+        description: 'Responsible for developing an inventory and cash automation system for the Sakura Coffee Shop cafeteria. Focused on cash automation, the system allows cafeteria employees to make sales faster and more efficiently, while allowing cafeteria administrators to keep track of sales made and cafeteria inventory.',
+        latest: true,
+    },
+    {
+        title: 'University Project: UNAN-LEON Thesis Repository System',
+        date: 'Done in September 2023',
+        description: 'I developed a thesis repository system for UNAN-León, which facilitates university students to search and download theses faster and more efficiently, while allowing university professors to upload theses quickly and effectively.',
+        latest: false,
+    }
+]

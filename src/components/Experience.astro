@@ -1,12 +1,18 @@
 ---
 import ExperienceItems from "./ExperienceItems.astro"
-import { experiencieEs } from "./data/Experiencie"
+import { experiencieEs, experiencieEn } from "./data/Experiencie"
+
+
+const { lenguage } = Astro.props
+
+const EXPERIENCES = lenguage === 'es' ? experiencieEs : experiencieEn
+
 ---
 
 <ol class="border-s border-gray-200 ml-4">                  
     {
-        experiencieEs.map(experiencie => (
-            <ExperienceItems {...experiencie} />
+        EXPERIENCES.map(experiencie => (
+            <ExperienceItems {...experiencie} lenguage={lenguage} />
         ))
     } 
 </ol>

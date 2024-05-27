@@ -24,32 +24,32 @@ const CONDICION = lenguage === 'es';
 >
 	<main class="px-4 md:px-0">
 		<Hero lenguage={lenguage} condition={CONDICION} client:visible/>
-		<SectionContainer id="xp" class="pb-32">
+		<SectionContainer id="experiencia" class="pb-32">
 			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
 				<BriefCase class="size-8" />
-				Experiencia Laboral
+				{ CONDICION ? es["exp-section"].title : en["exp-section"].title }
 			</h2>
-			<Experience />
+			<Experience lenguage={lenguage} />
 		</SectionContainer>
 		
 		<SectionContainer id="proyectos">
 			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
 				<CodeIcon class="size-8" />
-				Proyectos
+				{ CONDICION ? es["project-section"].title : en["project-section"].title }
 			</h2>
-			<Projects />
+			<Projects lenguage={lenguage} />
 		</SectionContainer>
 
 		<SectionContainer id="tecnologias" class="pt-32">
 			<h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
 				<TecnologyIcon class="size-8" />
-				Tecnologías
+				{ CONDICION ? es["tech-section"].title : en["tech-section"].title }
 			</h2>
-			<Tecnologys client:visible/>
+			<Tecnologys lenguage={ lenguage } client:visible/>
 		</SectionContainer>
 
 		<SectionContainer id="gracias" class="pt-32">
-			<TextGenerate client:visible/>
+			<TextGenerate lenguage={lenguage} client:visible/>
 		</SectionContainer >
 
 	</main>

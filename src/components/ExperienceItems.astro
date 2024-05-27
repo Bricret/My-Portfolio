@@ -3,10 +3,11 @@ interface Props {
   title: string
   description?: string
   date: string
-  latest?: boolean
+  latest?: boolean,
+  lenguage?: string
 }
 
-const { title, description, date, latest } = Astro.props
+const { title, description, date, latest, lenguage } = Astro.props
 ---
 
 
@@ -20,7 +21,9 @@ const { title, description, date, latest } = Astro.props
         <h3 class="flex items-center mb-1 text-lg font-semibold text-sky-200 text-wrap mt-2">
             {title}
             {
-                latest && <span class="bg-green-400 text-white text-sm me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-500 ms-3 cursor-default">Reciente</span>
+                latest && <span class="bg-green-400 text-white text-sm me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-500 ms-3 cursor-default">
+                    { lenguage === 'es' ? 'Último' : 'Latest' }
+                </span>
             }
         </h3>
         <time class="block mb-2 text-sm font-normal leading-none text-green-200/65">{ date }</time>
