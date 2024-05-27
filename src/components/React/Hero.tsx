@@ -8,11 +8,10 @@ import es from '../../utils/assets/es.json';
 import en from '../../utils/assets/en.json';
 
 interface Props {
-  lenguage: string;
   condition: boolean;
 }
 
-export function Hero( { lenguage, condition }: Props ) {
+export function Hero( { condition }: Props ) {
   return (
     <section className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
       <article className="relative z-10 text-lg md:text-7xl bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-600">
