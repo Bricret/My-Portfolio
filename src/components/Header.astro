@@ -5,6 +5,10 @@ import './React/UI/style.css'
 
 const {lenguage} = Astro.props;
 const CONDICION = lenguage === 'es';
+
+let checked = false;
+
+
 ---
 
 <header class="grid grid-cols-[400px_1fr_400px] justify-center items-center py-5 w-full xl:w-[1120px] mx-auto sticky top-0 z-50">
@@ -26,7 +30,13 @@ const CONDICION = lenguage === 'es';
         </a>
     </nav>
     <div class="w-full hidden justify-end items-end md:flex">
-        <input type="checkbox" class="items-end justify-end" id="switch" />
-        <label for="switch">Toggle</label>
+        <input 
+            type="checkbox" 
+            id="switch"
+            checked={checked}
+        />
+        <label for="switch">
+            <!-- <Spain /> -->
+        </label>
     </div>
 </header>
