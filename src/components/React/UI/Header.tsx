@@ -45,14 +45,16 @@ export const Header = ({ lenguage }: { lenguage: string }) => {
           {CONDICION ? es.navbar.thx : en.navbar.thx}
         </a>
       </nav>
-      <div className="w-full hidden justify-end items-end md:flex">
+      <div className="w-full hidden justify-end items-center md:flex">
+        <h1 className="pr-4">{ CONDICION ? 'Cambiar idioma' : 'Change Lenguage' }</h1>
         <input
           type="checkbox"
           id="switch"
           checked={change}
           onChange={handleChange}
         />
-        <label htmlFor="switch"></label>
+        <label htmlFor="switch">
+        </label>
       </div>
     </header>
   );
