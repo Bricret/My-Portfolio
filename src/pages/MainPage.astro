@@ -11,6 +11,7 @@ import BriefCase from "../components/icons/BriefCase.astro";
 import Layout from "../layouts/Layout.astro";
 import es from '../utils/assets/es.json';
 import en from '../utils/assets/en.json';
+import { ProjectsGrid } from "../components/React/UI/Projects-Grid";
 
 const {leng: lenguage} = Astro.props;
 const CONDICION = lenguage === 'es';
@@ -37,7 +38,8 @@ const CONDICION = lenguage === 'es';
 				<CodeIcon class="size-8" />
 				{ CONDICION ? es["project-section"].title : en["project-section"].title }
 			</h2>
-			<Projects lenguage={lenguage} />
+			<!-- <Projects lenguage={lenguage} /> -->
+			 <ProjectsGrid client:visible />
 		</SectionContainer>
 
 		<SectionContainer id="tecnologias" class="pt-32">
@@ -48,9 +50,8 @@ const CONDICION = lenguage === 'es';
 			<Tecnologys lenguage={ lenguage } client:visible/>
 		</SectionContainer>
 
-		<SectionContainer id="gracias" class="pt-32">
+		<SectionContainer id="gracias">
 			<TextGenerate lenguage={lenguage} client:visible/>
 		</SectionContainer >
-
 	</main>
 </Layout>
