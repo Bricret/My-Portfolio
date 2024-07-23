@@ -13,7 +13,7 @@ export function ProjectsGrid() {
 const ProjectOne = () => {
   return (
     <main className="relative">
-      <p className="bg-[#800080] font-semibold absolute -top-40 right-0 rounded-2xl px-2 py-0.5 max-w-fit">
+      <p className="bg-[#800080] font-semibold absolute -top-32 right-0 rounded-2xl px-2 py-0.5 max-w-fit">
         Full Stack
       </p>
       <div className="flex flex-col">
@@ -21,10 +21,14 @@ const ProjectOne = () => {
           Sakura Coffee Shop System
         </p>
         <p className="font-normal text-base text-white"></p>
-        <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        <p className="font-normal text-base mt-4 mb-2 max-w-lg text-neutral-200">
           Sistema POS y manejo de inventario con automatizacion del cierre de
           caja, reporte de ventas, manejo de pedidos y proteccion de rutas por
           roles de usuario.
+        </p>
+        <p className="mb-4 flex items-center">
+          <h5 className="mr-2 text-green-600 font-semibold text-lg">Credenciales:</h5>
+          <blockquote className="">User: <span className="font-bold text-lg">admin</span> Pass: <span className="font-bold text-lg">123</span></blockquote>
         </p>
       </div>
       <ul className="flex flex-wrap gap-x-4 gap-y-2 text-white pb-4 text-sm font-extralight">
