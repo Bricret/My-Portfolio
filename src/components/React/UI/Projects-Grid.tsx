@@ -33,13 +33,13 @@ const ProjectOne = () => {
         <li className="bg-zinc-700 px-2 py-0.5 rounded-2xl">TypeScript</li>
         <li className="bg-zinc-700 px-2 py-0.5 rounded-2xl">React</li>
         <li className="bg-zinc-700 px-2 py-0.5 rounded-2xl">Next.js</li>
-        <li className="bg-zinc-700 px-2 py-0.5 rounded-2xl">Server Action</li>
-        <li className="bg-zinc-700 px-2 py-0.5 rounded-2xl">MySQL</li>
+        <li className="bg-zinc-700 px-2 py-0.5 rounded-2xl">Tailwind CSS</li>
+        <li className="bg-zinc-700 px-2 py-0.5 rounded-2xl">SupaBase</li>
       </ul>
       <div className="flex items-center font-semibold">
         <a
           className="px-4 py-2 rounded-md border border-neutral-300 bg-neutral-100 text-stone-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md mr-4"
-          href="https://sakura-coffee-shop-admin-test.vercel.app/"
+          href="https://house-project-rho.vercel.app/"
           target="_blank"
           rel="noreferrer"
           aria-label="Probar el proyecto"
@@ -48,7 +48,7 @@ const ProjectOne = () => {
         </a>
         <a
           className="flex items-center gap-x-1.5 px-4 py-1.5 rounded-md border border-black/85 bg-black text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
-          href="https://github.com/Bricret/sakura-coffee-admin"
+          href="https://github.com/Bricret/house-project"
           target="_blank"
           rel="noreferrer"
           aria-label="Ver el código fuente en GitHub"
