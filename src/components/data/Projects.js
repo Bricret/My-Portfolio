@@ -48,6 +48,15 @@ export const TAGS = {
 
 export const ProjectsEs = [
     {
+        title: 'Página Web Taxi Bargain',
+        description: 'Una página web para un servicio de reserva de taxis con una interfaz fácil de usar e integración de solicitudes.',
+        image: '/projects/taxiBargain-mk.png',
+        link: 'https://sakura-coffee-shop-admin-test.vercel.app',
+        github: 'https://github.com/Bricret/sakura-coffee-admin',
+        details: 'Usuario: admin Contraseña: 123',
+        tags: [TAGS.NEXT,  TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.PRISMA, TAGS.MYSQL ]
+    },
+    {
         title: 'Sistema de inventario y manejo de caja de cafeteria Sakura Coffe Shop',
         description: 'El proyecto consiste en un sistema de inventario y gestión de caja para una cafetería. Este sistema posibilita llevar un control detallado de los productos vendidos, gestionar pedidos, monitorizar el efectivo disponible en caja y registrar las ganancias diarias. Además, facilita la realización de cierres de caja y proporciona acceso al historial completo de ventas. La aplicación genera múltiples archivos Excel con informes filtrados por fechas, ofreciendo así un análisis detallado de las transacciones. Destaca por su alto nivel de seguridad en el manejo de datos, asegurando la confidencialidad y integridad de la información.',
         image: '/projects/Project_SakuraCoffee.webp',

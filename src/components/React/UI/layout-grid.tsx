@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import type React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../../utils/cn";
 
@@ -27,7 +28,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   return (
     <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, "cursor-pointer")}>
+        <div key={card.id} className={cn(card.className, "cursor-pointer")}>
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
